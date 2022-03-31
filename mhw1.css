@@ -1,0 +1,235 @@
+html {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+body{
+    margin:0;
+}
+
+nav{
+    margin:0;
+    padding: 10px 25px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+em{
+    font-size: 1.2em;
+}
+
+#navbuttons {
+    margin: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 300px;
+}
+
+a.logo {
+    font-size: 2em;
+}
+
+a.button {
+    background-color: palevioletred;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+a.button:hover{
+    /* background-color: red; */
+    font-weight: bold;
+    cursor: pointer;
+    border-color: black;
+}
+
+a.other:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#burger {
+    display: none;
+}
+  
+#burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+  
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: relative;
+    height: 500px;
+
+    background-image: url("https://www.apple.com/newsroom/images/passions/education/apple_coding-programs-for-educators-and-students_07092020.jpg.og.jpg?202203231713");
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header p {
+    z-index: 1;
+}
+
+header h1{
+    font-size: 3em;
+    z-index: 1;
+    text-align: center;
+    max-width: 700px;
+
+    margin-bottom: 50px;
+}
+
+header h2{
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+div.infoPage {
+    
+    margin-top: -50px;
+    text-align: center;
+    line-height: 2px;
+}
+
+.infoPage img{
+    display: block;
+    margin-left: auto ;
+    margin-right: auto;
+
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+h2{
+    text-align: center;
+}
+
+section {
+    width: 60%;
+    margin: 50px auto;
+    margin-bottom: 90px;
+
+    position: relative;
+}
+
+p.voto{
+    font-style: italic;
+}
+
+p.num {
+    position: absolute;
+    left: -40px;
+    margin:0;
+    font-size: 1.5em;
+}
+
+div.linea {
+    height: 100%;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    left: -5px;
+    margin:0;
+}
+
+section p {
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+section h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+section img{
+    width: 100%;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 1);
+    height: 100px;
+
+    font-size: 1.2em;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+footer div p{
+    margin:0;
+}
+
+@media (max-width: 550px) {
+    section {
+        margin-left: 60px;
+        width: calc(100% - 80px);
+    }
+
+    header h1 {
+        font-size: 2em;
+        max-width: 400px;
+    }    
+
+    #navbuttons {
+        display: none;
+    }
+    
+    #burger {
+        display: block;
+    }
+
+    footer div {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+}
+
+@media (max-height: 700px) {
+    header{
+        height: 350px;
+    }
+}
