@@ -97,10 +97,6 @@ header {
     bottom: 0;
 }
 
-header p {
-    z-index: 1;
-}
-
 header h1{
     font-size: 3em;
     z-index: 1;
@@ -108,11 +104,6 @@ header h1{
     max-width: 700px;
 
     margin-bottom: 50px;
-}
-
-header h2{
-    font-size: 1.5em;
-    z-index: 1;
 }
 
 div.infoPage {
@@ -135,11 +126,6 @@ div.infoPage {
 
     position: relative;
     z-index: 1;
-}
-
-
-h2{
-    text-align: center;
 }
 
 section {
